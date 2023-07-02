@@ -7,13 +7,13 @@ import requests from '../Requests'
   return (
     <div>
         <Main />
-        <Row title='Discover'     fetchURL={requests.requestDiscover} />
-        <Row title='Episode'      fetchURL={requests.requestEpisode} />
-        <Row title='Movie'        fetchURL={requests.requestMovie} />
-        <Row title='Popular'      fetchURL={requests.requestPopular} />
+        <Row slideId='1row' title='Discover'     fetchURL={requests.requestDiscover} />
+        <Row slideId='2row' title='Episode'      fetchURL={requests.requestEpisode} />
+        <Row slideId='3row' title='Movie'        fetchURL={requests.requestMovie} />
+        <Row slideId='4row' title='Popular'      fetchURL={requests.requestPopular} />
         {/*<Row title='Translations' fetchURL={requests.requestTranslations} />*/}
         {/*<Row title='Latest'       fetchURL={requests.requestLatest} />*/}
-        <Row title='Up Coming'    fetchURL={requests.requestUpcoming} />
+        <Row slideId='5row' title='Up Coming'    fetchURL={requests.requestUpcoming} />
     </div>
   )
 }
